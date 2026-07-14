@@ -35,6 +35,7 @@ export default function Hero() {
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,#dbeafe_0%,transparent_45%)]"/>
 
             <div className="mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl items-center justify-between gap-20 px-6">
+            
 
                 {/*left side*/}
                 <div className="max-w-xl">
@@ -75,7 +76,7 @@ export default function Hero() {
                         {tags.map((tag) => (
                             <span
                             key={tag.name}
-                            className="inline-flex items-center gap-1.5 rounded-2xl border border-gray-200 bg-white px-1 py-2 text-sm text-gray-600 transition hover:border-blue-200 hover:bg-blue-50"
+                            className="inline-flex items-center gap-1.5 rounded-2xl border border-gray-200 bg-white px-1 py-2 text-sm text-gray-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
                             >
                                 {tag.logo && (
                                     <Image 

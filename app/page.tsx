@@ -6,7 +6,7 @@ import Roadmaps from "@/components/home/Roadmaps";
 import Resources from "@/components/home/Resources";
 import CTA from "@/components/home/CTA";
 import Statistics from "@/components/home/Statistics";
-import Footer from "@/components/home/Footer";
+import Footer from "@/components/layout/Footer";
 import FAQ from "@/components/home/FAQ";
 
 export default function Home() {
