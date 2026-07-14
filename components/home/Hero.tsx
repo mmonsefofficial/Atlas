@@ -3,12 +3,29 @@ import Image from "next/image";
 import{ ArrowRight, Search } from "lucide-react";
 
 const tags = [
-    " Python ",
-    " JavaScript ",
-    " React ",
-    " C++ ",
-    "AI & ML",
-    "Web Development",
+    {
+        name: "Python",
+        logo:"/logos/python.svg",    
+    },
+    {
+        name: "JavaScript",
+        logo:"/logos/javascript.svg",    
+    },
+    {
+        name: "React",
+        logo:"/logos/react.svg",    
+    },
+    {
+        name: "C++",
+        logo:"/logos/cpp.svg",    
+    },
+    {
+        name: "AI & ML",    
+    },
+    {
+        name: "Web Development",    
+    },
+      
 ];
 
 export default function Hero() {
@@ -44,9 +61,10 @@ export default function Hero() {
                         />
                         <input
                         type="text"
-                        placeholder="search python, React, AI..."
-                        className="flex-1 bg-trasparent px-4 outline-none"
+                        placeholder="search roadmaps, resources..."
+                        className="flex-1 bg-trasparent px-4 outline-none placeholder:text-gray-400"
                         />
+                        
                         <button className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 text-white transition hover:bg-blue-700">
                             <ArrowRight size={18} />
                         </button>
@@ -56,10 +74,18 @@ export default function Hero() {
                     <div className="mt-8 flex flex-warp gap-3">
                         {tags.map((tag) => (
                             <span
-                            key={tag}
-                            className="rounded-full border border-gray-200 bg-white px-2 py-2 text-sm text-gray-600 transition hover:border-blue-200 hover:bg-blue-50"
+                            key={tag.name}
+                            className="inline-flex items-center gap-1.5 rounded-2xl border border-gray-200 bg-white px-1 py-2 text-sm text-gray-600 transition hover:border-blue-200 hover:bg-blue-50"
                             >
-                                {tag}
+                                {tag.logo && (
+                                    <Image 
+                                    src={tag.logo}
+                                    alt={tag.name}
+                                    width={18}
+                                    height={18}
+                                    />
+                                )}
+                                {tag.name}
                             </span>
                         ))}
 

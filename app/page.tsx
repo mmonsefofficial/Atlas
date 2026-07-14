@@ -4,6 +4,11 @@ import Features from "@/components/home/Features";
 import Categories from "@/components/home/Categories";
 import Roadmaps from "@/components/home/Roadmaps";
 import Resources from "@/components/home/Resources";
+import CTA from "@/components/home/CTA";
+import Statistics from "@/components/home/Statistics";
+import Footer from "@/components/home/Footer";
+import FAQ from "@/components/home/FAQ";
+
 export default function Home() {
   return (
     <>
@@ -15,7 +20,11 @@ export default function Home() {
         <Categories />
         <Roadmaps />
         <Resources />
+        <Statistics />
+        <FAQ />
+        <CTA />
       </main>
+      <Footer />
     </>
   );
 }
