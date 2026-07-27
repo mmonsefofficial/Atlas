@@ -1,30 +1,43 @@
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/home/Hero";
-import Features from "@/components/home/Features";
-import Categories from "@/components/home/Categories";
+import Hero from "@/components/hero/Hero";
 import Roadmaps from "@/components/home/Roadmaps";
-import Resources from "@/components/home/Resources";
 import CTA from "@/components/home/CTA";
-import Statistics from "@/components/home/Statistics";
 import Footer from "@/components/layout/Footer";
 import FAQ from "@/components/home/FAQ";
+import WhyAtlas from "@/components/home/why-atlas/WhyAtlas";
+import ResourceStack from "@/components/home/resources/ResourceStack";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-
       <main>
-        <Hero />
-        <Features />
-        <Categories />
-        <Roadmaps />
-        <Resources />
-        <Statistics />
-        <FAQ />
+        {/* Home Section */}
+        <section id="home">
+          <Hero />
+        </section>
+
+        {/* About Section */}
+        
+          <WhyAtlas />
+        
+
+        {/* Roadmaps Section */}
+        <section id="roadmaps">
+          <Roadmaps limit={3} />
+        </section>
+
+        {/* Resources Section */}
+        <ResourceStack />
+        <section id="about">
+          <FAQ />
+        </section>
+        
         <CTA />
       </main>
       <Footer />
     </>
+
   );
+
 }

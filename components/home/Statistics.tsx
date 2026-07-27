@@ -1,21 +1,4 @@
-const stats = [
-    {
-        number: "2500+",
-        label: "Learning Resources",
-    },
-    {
-        number: "120+",
-        label: "Learning Roadmaps",
-    },
-    {
-        number: "40+",
-        label: "Programming Topics",
-    },
-    {
-        number: "100%",
-        label: "Free Forever",
-    },
-];
+import { statistics } from "@/data/statistics";
 
 export default function Statistics() {
     return(
@@ -32,13 +15,13 @@ export default function Statistics() {
                 </div>
 
                 <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                    {stats.map((stat) => (
+                    {statistics.map((stat) => (
                         <div
                         key={stat.label}
-                        className="rounded-3xl border border-gary-200 bg-white p-10 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                        className="rounded-3xl border border-gray-200 bg-white p-10 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
                         >
                            <h3 className="text-5xl font-bold text-blue-600">
-                            {stat.number}
+                            {stat.value}
                            </h3>
                            <p className="mt-4 text-gray-500">
                             {stat.label}

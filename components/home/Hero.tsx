@@ -1,32 +1,7 @@
 "use client";
 import Image from "next/image";
 import{ ArrowRight, Search } from "lucide-react";
-
-const tags = [
-    {
-        name: "Python",
-        logo:"/logos/python.svg",    
-    },
-    {
-        name: "JavaScript",
-        logo:"/logos/javascript.svg",    
-    },
-    {
-        name: "React",
-        logo:"/logos/react.svg",    
-    },
-    {
-        name: "C++",
-        logo:"/logos/cpp.svg",    
-    },
-    {
-        name: "AI & ML",    
-    },
-    {
-        name: "Web Development",    
-    },
-      
-];
+import { technologies } from "@/data/technologies";
 
 export default function Hero() {
     return(
@@ -73,10 +48,10 @@ export default function Hero() {
                     </div>
                     {/*tags*/}
                     <div className="mt-8 flex flex-warp gap-3">
-                        {tags.map((tag) => (
+                        {technologies.map((tag) => (
                             <span
                             key={tag.name}
-                            className="inline-flex items-center gap-1.5 rounded-2xl border border-gray-200 bg-white px-1 py-2 text-sm text-gray-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
+                            className="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-white px-1 py-1 text-sm text-gray-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
                             >
                                 {tag.logo && (
                                     <Image 

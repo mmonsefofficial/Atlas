@@ -13,15 +13,18 @@ export default function Card({
       className={`
         rounded-[32px]
         border
-        border-gray-200
-        bg-white
         shadow-sm
         transition-all
         duration-300
-        hover:-translate-y-1
-        hover:shadow-xl
+
         ${className}
       `}
+      style={{
+        backgroundColor: "var(--surface)",
+        color: "var(--foreground)",
+        borderColor: "var(--border)",
+        boxShadow: "var(--shadow)",
+      }}
     >
       {children}
     </div>

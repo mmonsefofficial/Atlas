@@ -1,97 +1,179 @@
-import { ArrowRight } from "lucide-react";
+"use client";
 
-const roadmaps = [
-    {
-        title:"Frontend Developer",
-        description:
-            "Master HTML, CSS, JavaScript, React and Next.js from beginner to advanced.",
-        lessons:"42 Resources",
-        color:"from-blue-500 to-cyan-500",
-    },
-    {
-        title:"Backend Developer",
-        description:
-            "Learn Node.js, Express, APIs, databases and authentication.",
-        lessons:"38 Resources",
-        color:"from-violet-500 to-purple-600",
-    },
-    {
-    title: "Full Stack Developer",
-    description:
-      "Combine frontend and backend skills to build complete web applications.",
-    lessons: "56 Resources",
-    color: "from-indigo-500 to-blue-600",
-    },
-    {
-    title: "Cybersecurity",
-    description:
-        "Learn networking, Linux, ethical hacking, penetration testing, and digital security.",
-    lessons: "44 Resources",
-    color: "from-red-500 to-orange-500",
-    },
-    
-    {
-        title:"Artificial Intelligence",
-        description:
-            "Dive into Python, Machine Learning, Deep Learning and Computer Vision.",
-        lessons:"51 Resources",
-        color:"from-emerald-500 to-teal-500",
-    },
-    {
-    title: "Competitive Programming",
-    description:
-      "Master algorithms, data structures and problem solving for contests.",
-    lessons: "34 Resources",
-    color: "from-cyan-500 to-sky-500",
-  },
-];
+import { ArrowRight, BookOpen, Clock3, CheckCircle } from "lucide-react";
+import { roadmaps } from "@/data/roadmaps";
+import Image from "next/image";
+import Link from "next/link";
+import { useProgress, type ProgressData } from "@/lib/useProgress";
 
-export default function Roadmaps() {
-    return(
-        <section className="py-28 bg-gray-50">
-            <div className="mx-auto max-w-7xl px-6">
-                <div className="flex items-end justify-between">
-                    <div>
-                        <h2 className="text-5xl font-semibold tracking-tight">
-                            Featured Roadmaps
-                        </h2>
-                        <p className="mt-4 text-lg text-gray-500">
-                            Follow a complete learning path from start to finish.
-                        </p>
-                    </div>
-                    <button className="hidden rounded-xl border border-gray-200 bg-white px-5 py-3 transition hover:shadow md:block">
-                        View All
-                    </button>
-                </div>
-                <div className="mt-16 grid gap-8 lg:grid-cols-3">
-                    {roadmaps.map((roadmap) => (
-                        <div
-                        key={roadmap.title}
-                        className="group overflow-hidden rounded-[32px] bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                        >
-                        <div
-                         className={`h-52 bg-gradient-to-br ${roadmap.color}`}
-                         />
-                         <div className="p-8">
-                            <span className="rounded-full bg-blue-50 px-3 py-1 text-sm text-blue-600">
-                                {roadmap.lessons}
-                            </span>
-                            <h3 className="mt-6 text-2xl font-semibold">
-                                {roadmap.title}
-                            </h3>
-                            <p className="mt-4 leading-7 text-gray-500">
-                                {roadmap.description}
-                            </p>
+type Props = {
+  showHeader?: boolean;
+  limit?: number;
+  embedded?: boolean;
+};
 
-                            <button className="mt-8 flex items-center gap-2 font-medium text-blue-600 transition group-hover:gap-3">
-                                Start Learning 
-                                <ArrowRight size={18}/>
-                            </button>
-                        </div>
-                    </div>
-                    ))}
-                </div>
+export default function Roadmaps({
+  showHeader = true,
+  limit,
+  embedded = false,
+}: Props) {
+  const { getCompletedCount } = useProgress();
+
+  return (
+    <section className={embedded ? "" : "py-20 lg:py-28"}>
+      <div className="mx-auto max-w-7xl px-5 sm:px-6">
+        {showHeader && (
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h2
+                className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
+                style={{ color: "var(--foreground)" }}
+              >
+                Featured Roadmaps
+              </h2>
+
+              <p
+                className="mt-3 text-base sm:text-lg"
+                style={{ color: "var(--muted)" }}
+              >
+                Follow a complete learning path from start to finish.
+              </p>
             </div>
-        </section>
-    );
+
+            <Link
+              href="/roadmaps"
+              className="w-full rounded-xl border px-5 py-3 text-center transition-all duration-300 md:w-auto"
+              style={{
+                background: "var(--surface)",
+                color: "var(--foreground)",
+                borderColor: "var(--border)",
+              }}
+            >
+              View All
+            </Link>
+          </div>
+        )}
+
+        <div
+          className={`grid gap-6 md:grid-cols-2 xl:grid-cols-3 ${
+            showHeader ? "mt-12 lg:mt-16" : ""
+          }`}
+        >
+          {roadmaps.slice(0, limit ?? roadmaps.length).map((roadmap) => {
+            const completed = getCompletedCount(
+              roadmap.id as keyof ProgressData
+            );
+
+            const percentage = Math.round(
+              (completed / roadmap.topics) * 100
+            );
+
+            const isCompleted = completed >= roadmap.topics;
+
+            return (
+              <div
+                key={roadmap.id}
+                className="group overflow-hidden rounded-3xl border shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl lg:rounded-[32px]"
+                style={{
+                  background: "var(--surface)",
+                  borderColor: "var(--border)",
+                  boxShadow: "var(--shadow)",
+                }}
+              >
+                <div className="relative h-44 overflow-hidden sm:h-52">
+                  <Image
+                    src={roadmap.image}
+                    alt={roadmap.title}
+                    fill
+                    className="object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="p-6 sm:p-8">
+                  <h3
+                    className="mt-6 text-xl font-semibold sm:text-2xl"
+                    style={{ color: "var(--foreground)" }}
+                  >
+                    {roadmap.title}
+                  </h3>
+
+                  <p
+                    className="mt-4 text-sm leading-6 sm:text-base sm:leading-7"
+                    style={{ color: "var(--muted)" }}
+                  >
+                    {roadmap.description}
+                  </p>
+
+                  <div
+                    className="mt-5 flex items-center gap-2 text-sm"
+                    style={{ color: "var(--muted)" }}
+                  >
+                    <Clock3 size={16} />
+                    <span>{roadmap.duration}</span>
+                    <span>•</span>
+                    <BookOpen size={16} />
+                    <span>{roadmap.topics} Topics</span>
+                  </div>
+
+                  {completed > 0 && (
+                    <div className="mt-6">
+                      <div
+                        className="mb-2 flex justify-between text-sm"
+                        style={{ color: "var(--muted)" }}
+                      >
+                        <span>Progress</span>
+                        <span>{percentage}%</span>
+                      </div>
+
+                      <div
+                        className="h-2 overflow-hidden rounded-full"
+                        style={{
+                          background:
+                            "color-mix(in srgb, var(--border) 70%, transparent)",
+                        }}
+                      >
+                        <div
+                          className="h-full rounded-full transition-all duration-700"
+                          style={{
+                            width: `${percentage}%`,
+                            background: "var(--primary)",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  <Link
+                    href={roadmap.href}
+                    className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border px-5 py-3 text-center font-medium transition-all duration-300 hover:opacity-90 sm:inline-flex sm:w-auto sm:justify-start"
+                    style={{
+                      color: "var(--primary)",
+                      borderColor: "var(--border)",
+                    }}
+                  >
+                    {isCompleted ? (
+                      <>
+                        Completed
+                        <CheckCircle size={18} />
+                      </>
+                    ) : completed > 0 ? (
+                      <>
+                        Continue Learning
+                        <ArrowRight size={18} />
+                      </>
+                    ) : (
+                      <>
+                        Start Learning
+                        <ArrowRight size={18} />
+                      </>
+                    )}
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }
