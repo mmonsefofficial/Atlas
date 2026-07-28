@@ -10,6 +10,8 @@ Here's what Atlas looks like:
 
 <img width="2386" height="1211" alt="Screenshot 2026-07-27 163453" src="https://github.com/user-attachments/assets/423f599f-f2a6-4f1b-bd2f-e47cd259c620" />
 
+<img width="2511" height="1088" alt="Screenshot 2026-07-28 225524" src="https://github.com/user-attachments/assets/110107e2-394e-4b94-9896-276560969c3f" />
+
 <img width="1756" height="1175" alt="Screenshot 2026-07-27 175928" src="https://github.com/user-attachments/assets/98e9c79b-a0ce-4722-8c26-dc7dcd36d41b" />
 
 ## Try it
