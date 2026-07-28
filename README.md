@@ -1,5 +1,5 @@
 # ATLAS!!!
-hey! Atlas is a programming learning platform that provides structured roadmaps and curated resources that help learners focus on what matters without wasting time searching across multiple sources :)
+hey! Atlas is a programming learning platform that provides structured roadmaps and curated resources that help learners focus on what matters without wasting time searching across multiple sources.
 
 here's an AWESOME gif of my project!
 ![awesome gif](insert-your-image-or-gif-link-here.gif)
