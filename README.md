@@ -10,9 +10,9 @@ this project was made with [Next.js](https://nextjs.org/) and [React](https://re
 ## How to run the project
 1. Clone the source code to your device
 ```sh git clone [https://github.com/mmonsefofficial/atlas.git](https://github.com/mmonsefofficial/atlas.git)
-2.Install the project's dependencies
+2. Install the project's dependencies
 npm install
-3.Start the development server on localhost:3000
+3. Start the development server on localhost:3000
 npm run dev
-4.Build the site for production
+4. Build the site for production
 npm run build
