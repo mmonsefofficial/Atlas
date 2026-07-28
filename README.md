@@ -4,7 +4,9 @@ Atlas is a programming learning platform that brings structured roadmaps, truste
 
 Here's what Atlas looks like:
 
-<img width="2016" height="1344" alt="export (6)-Photoroom" src="https://github.com/user-attachments/assets/723b88c3-bf6e-42b1-aa85-11d8c179f2da" />
+<img width="2539" height="1209" alt="Screenshot 2026-07-28 223712" src="https://github.com/user-attachments/assets/28a91b3e-57bc-4028-a0a0-b83fcd71a8d8" />
+
+<img width="2535" height="1202" alt="Screenshot 2026-07-28 225126" src="https://github.com/user-attachments/assets/ea705efb-1e34-4369-b379-5c93563580e8" />
 
 <img width="2386" height="1211" alt="Screenshot 2026-07-27 163453" src="https://github.com/user-attachments/assets/423f599f-f2a6-4f1b-bd2f-e47cd259c620" />
 
