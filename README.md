@@ -5,7 +5,7 @@ here's an AWESOME gif of my project!
 ![awesome gif](insert-your-image-or-gif-link-here.gif)
 
 ## HOW THIS WAS MADE
-this project was made with [Next.js](https://nextjs.org/) and [React](https://react.dev/) using [TypeScript](https://www.typescriptlang.org/). The interface is styled with [Tailwind CSS](https://tailwindcss.com/), while [Framer Motion](https://www.framer.com/motion/) is used for smooth, simple animations :D
+this project was made with [Next.js](https://nextjs.org/) and [React](https://react.dev/) using [TypeScript](https://www.typescriptlang.org/). The interface is styled with [Tailwind CSS](https://tailwindcss.com/), while [Framer Motion](https://www.framer.com/motion/) is used for smooth, simple animations.
 
 ## heres how to run the project :)
 1. Clone the source code to your device
