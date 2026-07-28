@@ -13,7 +13,7 @@ Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/
 *   **Interactive UI:** Experience smooth page transitions and component animations built with Framer Motion.
 
 ## HOW THIS WAS MADE
-this project was made with [Next.js](https://nextjs.org/) and [React](https://react.dev/) using [TypeScript](https://www.typescriptlang.org/). The interface is styled with [Tailwind CSS](https://tailwindcss.com/), while [Framer Motion](https://www.framer.com/motion/) is used for smooth, simple animations.
+Atlas was built around reusable components so adding new roadmaps, resources, or features doesn’t require rewriting the UI. Most of the animations use lightweight CSS transforms instead of JavaScript to keep the website smooth, even on lower-end devices.
 
 ## HOW TO RUN THE PROJECT
 
