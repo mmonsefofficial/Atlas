@@ -11,6 +11,7 @@ Here's what Atlas looks like:
 <img width="2386" height="1211" alt="Screenshot 2026-07-27 163453" src="https://github.com/user-attachments/assets/423f599f-f2a6-4f1b-bd2f-e47cd259c620" />
 
 <img width="1756" height="1175" alt="Screenshot 2026-07-27 175928" src="https://github.com/user-attachments/assets/98e9c79b-a0ce-4722-8c26-dc7dcd36d41b" />
+
 ## Try it
 
 Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/)
