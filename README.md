@@ -1,45 +1,65 @@
-# ATLAS
-hey! Atlas is a programming learning platform that provides structured roadmaps and curated resources that help learners focus on what matters without wasting time searching across multiple sources.
+# Atlas
 
-here's an AWESOME screenshot of my project!
-<img width="2545" height="1210" alt="Screenshot 2026-07-28 044540" src="https://github.com/user-attachments/assets/c00e5dfe-305b-4e70-bc7d-0cfff8c42287" />
+Atlas is a programming learning platform that brings structured roadmaps, trusted learning resources, and real projects together in one place, so learners spend less time searching and more time building.
 
-## Try it:
+Here's what Atlas looks like:
+
+<img width="2545" height="1210" alt="Atlas Screenshot" src="https://github.com/user-attachments/assets/c00e5dfe-305b-4e70-bc7d-0cfff8c42287" />
+
+## Try it
+
 Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/)
 
+---
+
 ## Features
-*   **Structured Roadmaps:** Navigate through step-by-step learning paths for different programming domains.
-*   **Curated Resources:** Access a hand-picked list of educational materials directly from the dashboard.
-*   **Interactive UI:** Experience smooth page transitions and component animations built with Framer Motion.
 
-## HOW THIS WAS MADE
-Atlas was built around reusable components so adding new roadmaps, resources, or features doesn’t require rewriting the UI. Most of the animations use lightweight CSS transforms instead of JavaScript to keep the website smooth, even on lower-end devices.
+- **Structured Roadmaps** – Follow organized learning paths for different programming fields.
+- **Curated Resources** – Learn from carefully selected articles, videos, documentation, and tools.
+- **Progress Tracking** – Keep track of completed topics while moving through each roadmap.
+- **Responsive Design** – Built to work smoothly across desktop, tablet, and mobile devices.
+- **Modern UI** – Clean interface with light & dark themes, subtle animations, and reusable components.
 
-## HOW TO RUN THE PROJECT
+---
 
-1. Clone the source code to your device
-   ```sh
-   git clone [https://github.com/mmonsefofficial/Atlas.git](https://github.com/mmonsefofficial/Atlas.git)
-   ```
+## How Atlas was built
 
-2. Navigate into the project directory
-   ```sh
-   cd Atlas
-   ```
+One of my goals was to build Atlas so it could grow without needing to redesign the project every time I added new content. Instead of creating each page separately, I built reusable components that are shared across the platform, making it easy to add new roadmaps, resources, and future features.
 
-3. Install the project's dependencies
-   ```sh
-   npm install
-   ```
+Performance was another priority. Interactive sections such as the hero animation and technology strip rely mostly on GPU-accelerated CSS transforms instead of heavy JavaScript animations to keep the interface smooth across different devices.
 
-4. Start the development server on `localhost:3000`
-   ```sh
-   npm run dev
-   ```
+The biggest challenge wasn't writing the code—it was designing an interface that feels modern while staying simple enough that learners can focus on the content rather than the UI.
 
-5. Build the site for production
-   ```sh
-   npm run build
-   ```
+---
 
-and be joyous!
+## Running locally
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/mmonsefofficial/Atlas.git
+```
+
+2. Move into the project
+
+```bash
+cd Atlas
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
+5. Create a production build
+
+```bash
+npm run build
+```
