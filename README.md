@@ -1,6 +1,6 @@
 # Atlas
 
-Atlas is a programming learning platform that brings structured roadmaps, trusted learning resources, and real projects together in one place, so learners spend less time searching and more time building.
+Atlas is a free programming learning platform that brings structured roadmaps, trusted learning resources, and real projects together in one place, so learners spend less time searching and more time building.
 
 Here's what Atlas looks like:
 
