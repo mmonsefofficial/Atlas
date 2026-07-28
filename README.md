@@ -7,7 +7,7 @@ here's an AWESOME gif of my project!
 ## HOW THIS WAS MADE
 this project was made with [Next.js](https://nextjs.org/) and [React](https://react.dev/) using [TypeScript](https://www.typescriptlang.org/). The interface is styled with [Tailwind CSS](https://tailwindcss.com/), while [Framer Motion](https://www.framer.com/motion/) is used for smooth, simple animations.
 
-## heres how to run the project :)
+## How to run the project
 1. Clone the source code to your device
 ```sh git clone [https://github.com/mmonsefofficial/atlas.git](https://github.com/mmonsefofficial/atlas.git)
 2.Install the project's dependencies
