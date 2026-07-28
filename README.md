@@ -11,7 +11,7 @@ Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/
 *   **Structured Roadmaps:** Navigate through step-by-step learning paths for different programming domains.
 *   **Curated Resources:** Access a hand-picked list of educational materials directly from the dashboard.
 *   **Interactive UI:** Experience smooth page transitions and component animations built with Framer Motion.
-*   *[Add 1 or 2 more specific things a user can click or test in your demo]*
+*   
 
 ## HOW THIS WAS MADE
 this project was made with [Next.js](https://nextjs.org/) and [React](https://react.dev/) using [TypeScript](https://www.typescriptlang.org/). The interface is styled with [Tailwind CSS](https://tailwindcss.com/), while [Framer Motion](https://www.framer.com/motion/) is used for smooth, simple animations.
