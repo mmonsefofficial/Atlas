@@ -18,8 +18,6 @@ Here's what Atlas looks like:
 
 Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/)
 
----
-
 ## Features
 
 - **Structured Roadmaps** – Follow organized learning paths for different programming fields.
@@ -28,7 +26,6 @@ Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/
 - **Responsive Design** – Built to work smoothly across desktop, tablet, and mobile devices.
 - **Modern UI** – Clean interface with light & dark themes, subtle animations, and reusable components.
 
----
 
 ## How Atlas was built
 
@@ -38,7 +35,6 @@ Performance was another priority. Interactive sections such as the hero animatio
 
 The biggest challenge wasn't writing the code—it was designing an interface that feels modern while staying simple enough that learners can focus on the content rather than the UI.
 
----
 
 ## Running locally
 
