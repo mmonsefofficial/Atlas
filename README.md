@@ -36,7 +36,7 @@ Performance was another priority. Interactive sections such as the hero animatio
 The biggest challenge wasn't writing the code—it was designing an interface that feels modern while staying simple enough that learners can focus on the content rather than the UI.
 
 
-## Running locally
+## How to run it locally
 
 1. Clone the repository
 
