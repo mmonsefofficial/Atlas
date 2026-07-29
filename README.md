@@ -31,7 +31,7 @@ Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/
 
 One of my goals was to build Atlas so it could grow without needing to redesign the project every time I added new content. Instead of creating each page separately, I built reusable components that are shared across the platform, making it easy to add new roadmaps, resources, and future features.
 
-Performance was another priority. Interactive sections such as the hero animation and technology strip rely mostly on GPU-accelerated CSS transforms instead of heavy JavaScript animations to keep the interface smooth across different devices.
+Performance was important So I built Interactive sections such as the hero animation and technology strip rely mostly on GPU-accelerated CSS transforms instead of heavy JavaScript animations to keep the interface smooth across different devices.
 
 The biggest challenge wasn't writing the code—it was designing an interface that feels modern while staying simple enough that learners can focus on the content rather than the UI.
 
