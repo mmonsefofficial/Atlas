@@ -20,11 +20,11 @@ Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/
 
 ## Features
 
-- **Structured Roadmaps** – Follow organized learning paths for different programming fields.
-- **Curated Resources** – Learn from carefully selected Learning Paths, videos, documentation, and tools.
-- **Progress Tracking** – Keep track of completed topics while moving through each roadmap.
-- **Responsive Design** – Built to work smoothly across desktop, tablet, and mobile devices.
-- **Modern UI** – Clean interface with light & dark themes, simple animations, and reusable components.
+- **Structured Roadmaps** : Follow organized learning paths for different programming fields.
+- **Curated Resources** : Learn from carefully selected Learning Paths, videos, documentation, and tools.
+- **Progress Tracking** : Keep track of completed topics while moving through each roadmap.
+- **Responsive Design** : Built to work smoothly across desktop, tablet, and mobile devices.
+- **Modern UI** : Clean interface with light & dark themes, simple animations, and reusable components.
 
 
 ## How Atlas was built
