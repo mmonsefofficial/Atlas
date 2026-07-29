@@ -33,7 +33,7 @@ One of my goals was to build Atlas so it could grow without needing to redesign 
 
 Performance was important So I built Interactive sections such as the hero animation and technology strip rely mostly on GPU-accelerated CSS transforms instead of heavy JavaScript animations to keep the interface smooth across different devices.
 
-The biggest challenge wasn't writing the code—it was designing an interface that feels modern while staying simple enough that learners can focus on the content rather than the UI.
+The biggest challenge was designing an interface that feels modern while staying simple enough that learners can focus on the content rather than the UI.
 
 
 ## How to run it locally
