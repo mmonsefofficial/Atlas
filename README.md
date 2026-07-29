@@ -24,7 +24,7 @@ Open this: [https://atlas-navy-mu.vercel.app/](https://atlas-navy-mu.vercel.app/
 - **Curated Resources** – Learn from carefully selected Learning Paths, videos, documentation, and tools.
 - **Progress Tracking** – Keep track of completed topics while moving through each roadmap.
 - **Responsive Design** – Built to work smoothly across desktop, tablet, and mobile devices.
-- **Modern UI** – Clean interface with light & dark themes, subtle animations, and reusable components.
+- **Modern UI** – Clean interface with light & dark themes, simple animations, and reusable components.
 
 
 ## How Atlas was built
