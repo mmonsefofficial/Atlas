@@ -73,4 +73,4 @@ npm run build
 ```
 
 ## AI Disclosure
-As it's allowed to use Ai for about 30% , Ai was used  as a development assistant for a limited parts of Atlas for some styling in the landing page, the Resources cards, the Hack Club call-to-action section, and parts of the Hero section. All of these usage approximately about **10–15% of the project** . The rest parts of the project from A to Z was built and customized by me these including the data of roadmaps. I used Ai also in the data part as a guide only for the best learning path should the learner follow.
+Ai was used  as a development assistant for a limited parts of Atlas for some styling in the landing page, the Resources cards, the Hack Club call-to-action section, and parts of the Hero section. All of these usage approximately about **10–15% of the project** . The rest parts of the project from A to Z was built and customized by me these including the data of roadmaps. I used Ai also in the data part as a guide only for the best learning path should the learner follow.
