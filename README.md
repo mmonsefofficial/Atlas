@@ -66,10 +66,11 @@ npm install
 ```bash
 npm run dev
 ```
-
-## AI Disclosure
 5. Create a production build
 
 ```bash
 npm run build
 ```
+
+## AI Disclosure
+
