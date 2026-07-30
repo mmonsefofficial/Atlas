@@ -6,7 +6,7 @@ Here's what Atlas looks like:
 
 <img width="2539" height="1209" alt="Screenshot 2026-07-28 223712" src="https://github.com/user-attachments/assets/28a91b3e-57bc-4028-a0a0-b83fcd71a8d8" />
 The hero section in the landing page.
-    ---
+---
 <img width="2535" height="1202" alt="Screenshot 2026-07-28 225126" src="https://github.com/user-attachments/assets/ea705efb-1e34-4369-b379-5c93563580e8" />
 The roadmaps it shows the number of topics inside each roadmap and the expected duration to finish it.
     ---
